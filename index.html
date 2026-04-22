@@ -57,19 +57,7 @@
     </div>
 
     <!-- Decoração lateral com código -->
-    <div class="hero-code-deco fade-right">
-      <pre><code><span class="c-purple">const</span> <span class="c-cyan">dev</span> = {
-  nome: <span class="c-green">"Ana Júlia"</span>,
-  foco: <span class="c-green">"Backend"</span>,
-  stack: [
-    <span class="c-green">"Python"</span>,
-    <span class="c-green">"JavaScript"</span>,
-    <span class="c-green">"SQL"</span>,
-    <span class="c-green">"AWS"</span>
-  ],
-  disponivel: <span class="c-purple">true</span>
-};</code></pre>
-    </div>
+
 
     <!-- Indicador de scroll -->
     <div class="scroll-indicator">
@@ -78,69 +66,75 @@
     </div>
   </section>
 
-  <!-- ===================== SOBRE MIM ===================== -->
-  <section class="section sobre" id="sobre">
-    <div class="container">
-      <div class="section-label">01 — sobre mim</div>
-      <div class="sobre-grid">
-        <!-- Avatar / visual -->
-        <div class="sobre-visual reveal">
-          <div class="avatar-box">
-            <div class="avatar-inner">
-              <span class="avatar-initials">AJ</span>
-              <!-- Círculos orbitais decorativos -->
-              <div class="orbit orbit-1"></div>
-              <div class="orbit orbit-2"></div>
+<section class="section sobre" id="sobre">
+  <div class="container">
+    <div class="section-label">01 — sobre mim</div>
+
+    <div class="sobre-grid">
+
+      <!-- Badge (agora centralizado) -->
+       <div class="sobre-visual reveal">
+  <div class="avatar-box">
+
+    <!-- SUA FOTO -->
+    <div class="avatar-img-wrapper">
+      <img src="/images/eubonita.jpeg" alt="Ana Júlia" class="avatar-img">
+    </div>
+
+    <!-- Badge -->
+    <div class="avatar-badge">
+      <span class="status-dot"></span>
+      Disponível para oportunidades
+    </div>
+
+  </div>
+</div>
+      <!-- Texto -->
+      <div class="sobre-text reveal">
+        <h2 class="section-title">
+          Olá, eu sou a <span class="accent">Ana Júlia</span>
+        </h2>
+
+        <p>
+          Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonada por transformar ideias complexas em soluções elegantes e funcionais. Minha trajetória na tecnologia é guiada pela curiosidade constante e pela vontade de entender como as coisas funcionam por baixo dos panos.
+        </p>
+
+        <p>
+          Com foco em <strong>desenvolvimento Backend</strong>, me dedico a construir APIs robustas, sistemas escaláveis e arquiteturas que realmente resolvem problemas. Acredito que um bom backend é a espinha dorsal de qualquer produto digital de qualidade.
+        </p>
+
+        <p>
+          Além da programação, tenho vivência em design com as ferramentas da Adobe, o que me dá uma visão completa do ciclo de desenvolvimento — desde a concepção visual até a implementação técnica.
+        </p>
+
+        <!-- Destaques -->
+        <div class="sobre-highlights">
+          <div class="highlight-card">
+            <div>
+              <strong>Foco Principal</strong>
+              <span>Desenvolvimento Backend</span>
             </div>
-            <div class="avatar-badge">
-              <span class="status-dot"></span>
-              Disponível para oportunidades
+          </div>
+
+          <div class="highlight-card">
+            <div>
+              <strong>Especialidade</strong>
+              <span>APIs REST &amp; Integrações</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div>
+              <strong>Formação</strong>
+              <span>Análise e Desenv. de Sistemas</span>
             </div>
           </div>
         </div>
 
-        <!-- Texto -->
-        <div class="sobre-text reveal">
-          <h2 class="section-title">Olá, eu sou a <span class="accent">Ana Júlia</span></h2>
-          <p>
-            Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong>, apaixonada por transformar ideias complexas em soluções elegantes e funcionais. Minha trajetória na tecnologia é guiada pela curiosidade constante e pela vontade de entender como as coisas funcionam por baixo dos panos.
-          </p>
-          <p>
-            Com foco em <strong>desenvolvimento Backend</strong>, me dedico a construir APIs robustas, sistemas escaláveis e arquiteturas que realmente resolvem problemas. Acredito que um bom backend é a espinha dorsal de qualquer produto digital de qualidade.
-          </p>
-          <p>
-            Além da programação, tenho vivência em design com as ferramentas da Adobe, o que me dá uma visão completa do ciclo de desenvolvimento — desde a concepção visual até a implementação técnica.
-          </p>
-
-          <!-- Destaques em cards mini -->
-          <div class="sobre-highlights">
-            <div class="highlight-card">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>Foco Principal</strong>
-                <span>Desenvolvimento Backend</span>
-              </div>
-            </div>
-            <div class="highlight-card">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>Especialidade</strong>
-                <span>APIs REST &amp; Integrações</span>
-              </div>
-            </div>
-            <div class="highlight-card">
-              <span class="highlight-icon"></span>
-              <div>
-                <strong>Formação</strong>
-                <span>Análise e Desenv. de Sistemas</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
-
+  </div>
+</section>
   <!-- ===================== TECNOLOGIAS ===================== -->
   <section class="section tecnologias" id="tecnologias">
     <div class="container">
@@ -277,86 +271,84 @@
 
       <div class="projetos-grid">
 
-        <!-- Projeto 1: Mario -->
-        <article class="projeto-card reveal">
-          <div class="proj-header">
-            <div class="proj-number">01</div>
-            <div class="proj-tags">
-              <span class="tag tag-js">JavaScript</span>
-              <span class="tag tag-game">Game Dev</span>
-            </div>
+         <!-- Projeto 1: Mario (com imagem adicionada) -->
+      <article class="projeto-card reveal">
+        <!-- NOVA ÁREA PARA FOTO DO PROJETO MARIO -->
+        <div class="proj-image">
+          <!-- ⚠️ SUBSTITUA O 'src' PELO CAMINHO DA SUA FOTO (ex: "assets/mario-projeto.jpg") -->
+          <img src="/images/jogomario.png" 
+               alt="Prévia do projeto Jogo do Mario - substitua pela imagem real">
+        </div>
+        <div class="proj-header">
+          <div class="proj-number">01</div>
+          <div class="proj-tags">
+            <span class="tag tag-js">JavaScript</span>
+            <span class="tag tag-game">Game Dev</span>
           </div>
-          <h3 class="proj-title">Jogo do Mario</h3>
-          <p class="proj-desc">
-            Recriação do clássico Super Mario Bros utilizando JavaScript puro. O projeto implementa física de plataforma, detecção de colisão, animações de sprites e controles de teclado, explorando conceitos fundamentais de game development sem o uso de engines externas.
-          </p>
-          <div class="proj-footer">
-            <div class="proj-techs">
-              <span>JS</span><span>Canvas API</span><span>OOP</span>
-            </div>
-            <div class="proj-links">
-              <a href="#" class="proj-link" aria-label="Código no GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                Código
-              </a>
-            </div>
+        </div>
+        <h3 class="proj-title">Jogo do Mario</h3>
+        <p class="proj-desc">
+          Recriação do clássico Super Mario Bros utilizando JavaScript puro. O projeto implementa física de plataforma, detecção de colisão, animações de sprites e controles de teclado, explorando conceitos fundamentais de game development sem o uso de engines externas.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-techs">
+            <span>JS</span><span>Canvas API</span><span>OOP</span>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- Projeto 2: Forno Imperiale -->
-        <article class="projeto-card reveal">
-          <div class="proj-header">
-            <div class="proj-number">02</div>
-            <div class="proj-tags">
-              <span class="tag tag-html">HTML</span>
-              <span class="tag tag-web">Web</span>
-            </div>
+      <!-- Projeto 2: Forno Imperiale (com imagem adicionada) -->
+      <article class="projeto-card reveal">
+        <!-- NOVA ÁREA PARA FOTO DO PROJETO FORNO IMPERIALE -->
+        <div class="proj-image">
+          <!-- ⚠️ SUBSTITUA PELO CAMINHO REAL DA FOTO DO SITE DA PIZZARIA -->
+          <img src="/images/fornoimperiale2.jpeg" 
+               alt="Preview do site Forno Imperiale - pizzaria artesanal">
+        </div>
+        <div class="proj-header">
+          <div class="proj-number">02</div>
+          <div class="proj-tags">
+            <span class="tag tag-html">HTML</span>
+            <span class="tag tag-web">Web</span>
           </div>
-          <h3 class="proj-title">Forno Imperiale</h3>
-          <p class="proj-desc">
-            Website institucional desenvolvido para uma pizzaria artesanal, com foco em apresentação visual do cardápio e identidade da marca. O projeto utiliza HTML semântico com atenção especial à hierarquia de conteúdo, acessibilidade e estrutura de páginas web profissionais.
-          </p>
-          <div class="proj-footer">
-            <div class="proj-techs">
-              <span>HTML5</span><span>CSS3</span><span>Semântica</span>
-            </div>
-            <div class="proj-links">
-              <a href="#" class="proj-link" aria-label="Código no GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                Código
-              </a>
-            </div>
+        </div>
+        <h3 class="proj-title">Forno Imperiale</h3>
+        <p class="proj-desc">
+          Website institucional desenvolvido para uma pizzaria artesanal, com foco em apresentação visual do cardápio e identidade da marca. O projeto utiliza HTML semântico com atenção especial à hierarquia de conteúdo, acessibilidade e estrutura de páginas web profissionais.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-techs">
+            <span>HTML5</span><span>CSS3</span><span>Semântica</span>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- Projeto 3: Harmind -->
-        <article class="projeto-card reveal featured-card">
-          <div class="proj-featured-label">⭐ Destaque</div>
-          <div class="proj-header">
-            <div class="proj-number">03</div>
-            <div class="proj-tags">
-              <span class="tag tag-full">Full Stack</span>
-              <span class="tag tag-api">APP</span>
-            </div>
+      <!-- Projeto 3: Harmind (destaque, com imagem adicionada) -->
+      <article class="projeto-card reveal featured-card">
+        <!-- NOVA ÁREA PARA FOTO DO PROJETO HARMIND -->
+        <div class="proj-image">
+          <!-- ⚠️ SUBSTITUA PELA FOTO REAL DO APLICATIVO HARMIND -->
+          <img src="/images/harmindlogo2.jpg" 
+               alt="Interface ou conceito do app Harmind - musicoterapia para neurodiversidade">
+        </div>
+        <div class="proj-header">
+          <div class="proj-number">03</div>
+          <div class="proj-tags">
+            <span class="tag tag-full">Full Stack</span>
+            <span class="tag tag-api">APP</span>
           </div>
-          <h3 class="proj-title">Harmind</h3>
-          <p class="proj-desc">
-           O projeto consiste na idealização e desenvolvimento de um aplicativo de musicoterapia voltado para a neurodiversidade. Com foco na usabilidade e na acessibilidade, a plataforma tem como objetivo principal atuar como um recurso facilitador para a autorregulação de jovens autistas.
-          </p>
-          <div class="proj-footer">
-            <div class="proj-techs">
-              <span>Backend e Frontend</span><span>App</span><span>Database</span>
-            </div>
-            <div class="proj-links">
-              <a href="#" class="proj-link" aria-label="Código no GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                Código
-              </a>
-            </div>
+        </div>
+        <h3 class="proj-title">Harmind</h3>
+        <p class="proj-desc">
+          O projeto consiste na idealização e desenvolvimento de um aplicativo de musicoterapia voltado para a neurodiversidade. Com foco na usabilidade e na acessibilidade, a plataforma tem como objetivo principal atuar como um recurso facilitador para a autorregulação de jovens autistas.
+        </p>
+        <div class="proj-footer">
+          <div class="proj-techs">
+            <span>Backend e Frontend</span><span>App</span><span>Database</span>
           </div>
-        </article>
+        </div>
+      </article>
 
-      </div>
     </div>
   </section>
 
